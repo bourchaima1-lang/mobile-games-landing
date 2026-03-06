@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a wide variety of mobile games available for download.">
+    <title>Mobile Games Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #282c34;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .games-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            padding: 20px;
+        }
+        .game-item {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+        .game-item:hover {
+            transform: scale(1.05);
+        }
+        .game-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+        @media (max-width: 600px) {
+            .games-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #282c34;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Mobile Games</h1>
+        <p>Download Your Favorite Games</p>
+    </header>
+    <main>
+        <div class="games-container">
+            <!-- Repeat game items for 8 games -->
+            <div class="game-item">
+                <img src="game1-icon.png" alt="Game 1" class="game-icon">
+                <h2>Game 1</h2>
+                <button onclick="_KB('Game 1')">Download</button>
+            </div>
+            <div class="game-item">
+                <img src="game2-icon.png" alt="Game 2" class="game-icon">
+                <h2>Game 2</h2>
+                <button onclick="_KB('Game 2')">Download</button>
+            </div>
+            <div class="game-item">
+                <img src="game3-icon.png" alt="Game 3" class="game-icon">
+                <h2>Game 3</h2>
+                <button onclick="_KB('Game 3')">Download</button>
+            </div>
+            <div class="game-item">
+                <img src="game4-icon.png" alt="Game 4" class="game-icon">
+                <h2>Game 4</h2>
+                <button onclick="_KB('Game 4')">Download</button>
+            </div>
+            <div class="game-item">
+                <img src="game5-icon.png" alt="Game 5" class="game-icon">
+                <h2>Game 5</h2>
+                <button onclick="_KB('Game 5')">Download</button>
+            </div>
+            <div class="game-item">
+                <img src="game6-icon.png" alt="Game 6" class="game-icon">
+                <h2>Game 6</h2>
+                <button onclick="_KB('Game 6')">Download</button>
+            </div>
+            <div class="game-item">
+                <img src="game7-icon.png" alt="Game 7" class="game-icon">
+                <h2>Game 7</h2>
+                <button onclick="_KB('Game 7')">Download</button>
+            </div>
+            <div class="game-item">
+                <img src="game8-icon.png" alt="Game 8" class="game-icon">
+                <h2>Game 8</h2>
+                <button onclick="_KB('Game 8')">Download</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 Mobile Games. All Rights Reserved.</p>
+    </footer>
+    <script>
+        function _KB(gameName) {
+            alert('Downloading ' + gameName);
+            // Call your download logic here
+        }
+    </script>
+</body>
+</html>
